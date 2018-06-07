@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'temp'
+    }
+
+  }
   stages {
     stage('Build Demo App') {
       when {
@@ -9,7 +14,8 @@ pipeline {
 
       }
       steps {
-        sh ''''''
+        sh '''npm install 
+npm run build'''
       }
     }
   }
