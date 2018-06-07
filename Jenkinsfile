@@ -21,9 +21,7 @@ npm run build'''
 
       }
       steps {
-        sh '''mkdir playbooks/files
-cp nodejs-demoapp.zip playbooks/files/nodejs-demoapp.zip
-ansible-playbook playbooks/deploy_dev.yml'''
+        sh 'npm run test'
       }
     }
     stage('DeployStage') {
