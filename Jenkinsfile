@@ -40,7 +40,6 @@ ansible-playbook playbooks/deploy_dev.yml'''
   }
   parameters {
     choice(name: 'REQUESTED_ACTION', choices: '''Build
-    Stage
-''', description: 'Type of action to perform')
+Stage''', description: 'Type of action to perform')
   }
 }
